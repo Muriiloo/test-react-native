@@ -1,0 +1,1 @@
+Este projeto é um aplicativo React Native para gerenciamento de posts. Ele permite criar, atualizar e visualizar posts, além de mostrar comentários relacionados a um post selecionado. O aplicativo utiliza uma API simulada para operações CRUD e exibe uma interface interativa para o usuário.
