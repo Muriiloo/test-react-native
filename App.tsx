@@ -91,6 +91,7 @@ const App = () => {
       <Text style={styles.title}>Posts</Text>
       <FlatList
         data={posts}
+        showsVerticalScrollIndicator={false}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View style={styles.postItem}>
@@ -120,7 +121,10 @@ const App = () => {
       >
         <View style={styles.modalContainer}>
           {selectedPost && (
-            <ScrollView style={styles.scrollView}>
+            <ScrollView
+              showsVerticalScrollIndicator={false}
+              style={styles.scrollView}
+            >
               <Text style={styles.detailsTitle}>{selectedPost.title}</Text>
               <Text style={styles.detailsBody}>{selectedPost.body}</Text>
               <Text style={styles.detailsComments}>Comentários:</Text>
